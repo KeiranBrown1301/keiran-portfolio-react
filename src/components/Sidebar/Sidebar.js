@@ -9,7 +9,7 @@ function Sidebar() {
     <div className='nav-bar'>
       <Link className='logo' to='/'>
         <img src={LogoS} alt='logo'/>
-        <img src={LogoSubtitle} alt='logo'/>
+        <img className='sub-logo' src={LogoSubtitle} alt='sub-logo'/>
       </Link>
     </div>
   )
