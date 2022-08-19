@@ -5,7 +5,7 @@ import LogoS from '../../assets/images/logo-s.png';
 import LogoSubtitle from '../../assets/images/logo_sub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Sidebar() {
   return (
@@ -47,6 +47,24 @@ function Sidebar() {
             href='https://www.linkedin.com/in/keiranbrown1301/'
           >
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel='noreferrer'
+            href='https://github.com/KeiranBrown1301'
+          >
+            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel='noreferrer'
+            href='https://www.instagram.com/kb_benice/'
+          >
+            <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
           </a>
         </li>
       </ul>
