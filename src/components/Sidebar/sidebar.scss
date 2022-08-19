@@ -69,10 +69,30 @@ nav {
       text-align: center;
       opacity: 0;
       transition: all 0.3s ease-out;
+    }
 
-      &:first-child {
-
+    &:first-child {
+      &::after {
+        content: 'HOME';
       }
+    }
+  }
+
+  .about-link {
+    &:after {
+      content: 'ABOUT';
+    }
+  }
+
+  .contact-link {
+    &:after {
+      content: 'CONTACT';
+    }
+  }
+
+  a.active {
+    svg {
+      color: #ffd700;
     }
   }
 }
