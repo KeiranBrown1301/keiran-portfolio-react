@@ -8,7 +8,15 @@ import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 function Home() {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n']
-  const jobArray = ['w', 'e', 'b','', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
+  const jobArray = [
+    'w',
+    'e',
+    'b',
+    ' ',
+    'd',
+    'e',
+    'v',
+  ]
 
   return (
     <div className='container home-page'>
@@ -31,7 +39,7 @@ function Home() {
             idx={22}
           />
         </h1>
-        <h2>Frontend Deeloper</h2>
+        <h2>Frontend Developer</h2>
         <Link to="/contact" className='flat-button'>CONTACT ME</Link>
       </div>
     </div>
