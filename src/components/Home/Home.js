@@ -6,7 +6,7 @@ import { useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 
 function Home() {
-  const {letterClass, setLetterClass} = useState('text-animate')
+  const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n']
   const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
 
@@ -19,10 +19,13 @@ function Home() {
           <AnimatedLetters
             letterClass={letterClass}
             strArray={nameArray}
-            idx={15}
-            />
+            idx={15} />
           <br />
-          web developer
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={jobArray}
+            idx={22}
+          />
         </h1>
         <h2>Frontend Deeloper</h2>
         <Link to="/contact" className='flat-button'>CONTACT ME</Link>
