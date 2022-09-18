@@ -3,6 +3,7 @@ import LogoTitle from '../../assets/images/logo-s.png'
 import './home.scss'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 
 function Home() {
   const {letterClass, setLetterClass} = useState('text-animate')
@@ -15,7 +16,11 @@ function Home() {
         <h1>
           Hi, <br /> I'm
           <img src={LogoTitle} alt="the developer" />
-          lobodan
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={nameArray}
+            idx={15}
+            />
           <br />
           web developer
         </h1>
