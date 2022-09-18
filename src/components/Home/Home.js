@@ -7,7 +7,7 @@ import { useState } from 'react'
 function Home() {
   const {letterClass, setLetterClass} = useState('text-animate')
   const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n']
-  const jobArray = []
+  const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
 
   return (
     <div className='container home-page'>
