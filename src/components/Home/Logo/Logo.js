@@ -1,11 +1,23 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import './logo.scss'
 import LogoS from '../../../assets/images/logo-s.png'
+import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin';
+import gsap from 'gsap-trial';
 
 function Logo() {
   const bgRef = useRef();
   const outlineLogoRef = useRef();
   const solidLogoRef = useRef();
+
+  useEffect(() => {
+    gsap.registerPlugin(DrawSVGPlugin)
+
+    gsap.timeline()
+    .to(bgRef.current, {
+      duration: 1,
+      opacity: 1
+    })
+  }, [])
 
   return (
     <div className='logo-container' ref={bgRef}>
