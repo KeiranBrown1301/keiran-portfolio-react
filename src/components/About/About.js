@@ -3,7 +3,13 @@ import './about.scss'
 
 function About() {
   return (
-    <div>About</div>
+    <div className='container about-page'>
+      <div className='text-zone'>
+        <h1>
+
+        </h1>
+      </div>
+    </div>
   )
 }
 
