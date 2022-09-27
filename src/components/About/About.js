@@ -34,19 +34,19 @@ function About() {
           <div className='face1'>
             <FontAwesomeIcon
               icon={faReact}
-              color='#DD0031'
+              color='#5ed4f4'
             />
           </div>
           <div className='face2'>
             <FontAwesomeIcon
               icon={faHtml5}
-              color='#DD0031'
+              color='#f06529'
             />
           </div>
           <div className='face3'>
             <FontAwesomeIcon
               icon={faCss3}
-              color='#DD0031'
+              color='#28a4d9'
             />
           </div>
           <div className='face4'>
@@ -58,13 +58,13 @@ function About() {
           <div className='face5'>
             <FontAwesomeIcon
               icon={faJsSquare}
-              color='#DD0031'
+              color='#efd81d'
             />
           </div>
           <div className='face6'>
             <FontAwesomeIcon
               icon={faGitAlt}
-              color='#DD0031'
+              color='#ec4d28'
             />
           </div>
         </div>
