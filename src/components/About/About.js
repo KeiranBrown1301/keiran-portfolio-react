@@ -8,7 +8,7 @@ function About() {
       <div className='text-zone'>
         <h1>
           <AnimatedLetters
-            strArray={['A', 'b', 'o', 'u', 't', ' ', 'M', 'e']}
+            strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
             idx={15}
           />
         </h1>
