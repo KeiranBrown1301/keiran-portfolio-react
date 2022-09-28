@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import './about.scss'
 import { faSmile } from '@fortawesome/free-solid-svg-icons';
+import Loader from 'react-loaders';
 
 function About() {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -15,61 +16,64 @@ function About() {
   }, [])
 
   return (
-    <div className='container about-page'>
-      <div className='text-zone'>
-        <h1>
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-            idx={15}
-          />
-        </h1>
-        <p>I'm a frontend developer currently living in Tokyo. I absolutely love using my creative side together in combination with logic and my problem solving skills in order to create beautiful looking functional apps.</p>
-        <p>Since moving to Tokyo, I've been working as an English Language Instructor and then before that in Australia as an Operations Associate. I took a leap and enrolled in the Full Stack Web Dev course at Le Wagon and the rest is history!</p>
-        <p>Naturally, most of my time is dedicated to coding but when I have a free moment I love to find new ramen spots that I haven't been to before around Tokyo (Jiro FTW!) as well as a bit of gaming here and there and finally Brazilian Jiu-jitsu to keep healthy!.</p>
-      </div>
+      <>
+        <div className='container about-page'>
+          <div className='text-zone'>
+            <h1>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+                idx={15}
+              />
+            </h1>
+            <p>I'm a frontend developer currently living in Tokyo. I absolutely love using my creative side together in combination with logic and my problem solving skills in order to create beautiful looking functional apps.</p>
+            <p>Since moving to Tokyo, I've been working as an English Language Instructor and then before that in Australia as an Operations Associate. I took a leap and enrolled in the Full Stack Web Dev course at Le Wagon and the rest is history!</p>
+            <p>Naturally, most of my time is dedicated to coding but when I have a free moment I love to find new ramen spots that I haven't been to before around Tokyo (Jiro FTW!) as well as a bit of gaming here and there and finally Brazilian Jiu-jitsu to keep healthy!.</p>
+          </div>
 
-      <div className='stage-cube-cont'>
-        <div className='cubespinner'>
-          <div className='face1'>
-            <FontAwesomeIcon
-              icon={faReact}
-              color='#5ed4f4'
-            />
-          </div>
-          <div className='face2'>
-            <FontAwesomeIcon
-              icon={faHtml5}
-              color='#f06529'
-            />
-          </div>
-          <div className='face3'>
-            <FontAwesomeIcon
-              icon={faCss3}
-              color='#28a4d9'
-            />
-          </div>
-          <div className='face4'>
-            <FontAwesomeIcon
-              icon={faSmile}
-              color='#DD0031'
-            />
-          </div>
-          <div className='face5'>
-            <FontAwesomeIcon
-              icon={faJsSquare}
-              color='#efd81d'
-            />
-          </div>
-          <div className='face6'>
-            <FontAwesomeIcon
-              icon={faGitAlt}
-              color='#ec4d28'
-            />
+          <div className='stage-cube-cont'>
+            <div className='cubespinner'>
+              <div className='face1'>
+                <FontAwesomeIcon
+                  icon={faReact}
+                  color='#5ed4f4'
+                />
+              </div>
+              <div className='face2'>
+                <FontAwesomeIcon
+                  icon={faHtml5}
+                  color='#f06529'
+                />
+              </div>
+              <div className='face3'>
+                <FontAwesomeIcon
+                  icon={faCss3}
+                  color='#28a4d9'
+                />
+              </div>
+              <div className='face4'>
+                <FontAwesomeIcon
+                  icon={faSmile}
+                  color='#DD0031'
+                />
+              </div>
+              <div className='face5'>
+                <FontAwesomeIcon
+                  icon={faJsSquare}
+                  color='#efd81d'
+                />
+              </div>
+              <div className='face6'>
+                <FontAwesomeIcon
+                  icon={faGitAlt}
+                  color='#ec4d28'
+                />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+        <Loader type='pacman' />
+      </>
   )
 }
 
