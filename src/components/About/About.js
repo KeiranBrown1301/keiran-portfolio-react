@@ -5,6 +5,7 @@ import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import './about.scss'
 import { faSmile } from '@fortawesome/free-solid-svg-icons';
 import Loader from 'react-loaders';
+import Sidebar from '../Sidebar/Sidebar'
 
 function About() {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -17,6 +18,7 @@ function About() {
 
   return (
       <>
+        <Sidebar />
         <div className='container about-page'>
           <div className='text-zone'>
             <h1>

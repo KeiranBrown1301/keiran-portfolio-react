@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import Logo from './Logo/Logo'
 import Loader from 'react-loaders'
+import Sidebar from '../Sidebar/Sidebar'
 
 function Home() {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -19,6 +20,7 @@ function Home() {
 
   return (
     <>
+      <Sidebar />
       <div className='container home-page'>
         <div className='text-zone'>
           <h1>
