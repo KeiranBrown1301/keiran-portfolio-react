@@ -34,7 +34,7 @@ function Sidebar() {
           exact="true"
           activeclassname="active"
           className="contact-link"
-          to="/"
+          to="/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
