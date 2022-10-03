@@ -44,6 +44,24 @@ function Contact() {
                     required
                   />
                 </li>
+                <li>
+                  <input
+                    placeholder="Subject"
+                    type="text"
+                    name="subject"
+                    required
+                  />
+                </li>
+                <li>
+                  <textarea
+                    placeholder="message"
+                    name="messgae"
+                    required
+                  ></textarea>
+                </li>
+                <li>
+                  <input type="submit" className="flat-button" value="SEND" />
+                </li>
               </ul>
             </form>
           </div>
