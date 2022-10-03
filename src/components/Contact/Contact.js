@@ -30,10 +30,12 @@ function Contact() {
             If you have any questions or want to chat, please feel free to
             contact me using the form below.
           </p>
-          <div>
+          <div className="contact-form">
             <form>
               <ul>
-                <li></li>
+                <li className="half">
+                  <input type="text" name="name" placeholder="name" required />
+                </li>
               </ul>
             </form>
           </div>
