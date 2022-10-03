@@ -89,6 +89,15 @@ function Contact() {
             </form>
           </div>
         </div>
+        <div className="info-map">
+          Smithy Smith,
+          <br />
+          Japan,
+          <br />
+          108-0073 Minato-ku <br />
+          Mita 2-16-14 <br />
+          <span>kbpamu@gmail.com</span>
+        </div>
       </div>
       <Loader type="pacman" />
     </>
