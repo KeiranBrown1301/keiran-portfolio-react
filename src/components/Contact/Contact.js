@@ -27,10 +27,16 @@ function Contact() {
           </h1>
           <p>
             I'm open to any job opportunities, from freelance to full time work.
-            If you have any questions or want to chat, please feel free to contact me
-            using the form below.
+            If you have any questions or want to chat, please feel free to
+            contact me using the form below.
           </p>
-          <div
+          <div>
+            <form>
+              <ul>
+                <li></li>
+              </ul>
+            </form>
+          </div>
         </div>
       </div>
       <Loader type="pacman" />
