@@ -98,6 +98,7 @@ function Contact() {
           Mita 2-16-14 <br />
           <span>kbpamu@gmail.com</span>
         </div>
+        <div className="map-wrap"></div>
       </div>
       <Loader type="pacman" />
     </>
