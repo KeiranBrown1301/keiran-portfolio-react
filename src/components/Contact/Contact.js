@@ -54,7 +54,7 @@ function Contact() {
                 </li>
                 <li>
                   <textarea
-                    placeholder="message"
+                    placeholder="Message"
                     name="messgae"
                     required
                   ></textarea>
